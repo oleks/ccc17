@@ -27,5 +27,8 @@ that no function is called with arguments of inadequate types.
 A function is "well-typed" if its run-time behaviour is clear from its
 type. It is seldom that prominant type-systems tackle the sort of
 side-effects characterised as /unquestionable/ above. (Although this
-is an exciting area of research!) They do however, tend to make a
-solid attempt at taming the /questionable/ side-effects above.
+is an exciting area of research!) Some prominent type-systems do make
+a solid an attempt at taming the /questionable/ side-effects above,
+and we will explore some of those in these lecture notes. Mostly,
+however, functional programming tends to be confined to pure,
+side-effect-free program fragments.
