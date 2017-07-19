@@ -12,7 +12,7 @@ use up some (non-reclaimable) time, and temporarily claim some memory
 for its execution. Calling a function may also have some
 /questionable/ side-effects, such as modifying external variables,
 allocating, or freeing memory that is not reclaimed before the
-function return, performing, or relying on I/O operations, etc.
+function returns, performing, or relying on I/O operations, etc.
 
 The "type" of a function specifies what sort of outcome we can expect
 from calling the function.
