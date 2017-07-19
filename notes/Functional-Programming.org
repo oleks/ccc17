@@ -1,0 +1,30 @@
+#+TITLE: Functional Programming
+#+AUTHOR: Oleks Shturmov
+#+EMAIL: oleks@oleks.info
+#+LANGUAGE: en
+
+Functional Programming is a programming paradigm which strives for
+programming by composing well-typed functions.
+
+A "function" is a computational process, that given some arguments
+produces a value. As an unquestionable side-effect, the function will
+use up some (non-reclaimable) time, and temporarily claim some memory
+for its execution. Calling a function may also have some
+/questionable/ side-effects, such as modifying external variables,
+allocating, or freeing memory that is not reclaimed before the
+function return, performing, or relying on I/O operations, etc.
+
+The "type" of a function specifies what sort of outcome we can expect
+from calling the function.
+
+As a baseline, the type of a function can specify some adequate types
+for its arguments, as well as the type of value that it will produce
+as a result. Having such types, we can ensure that sequences of
+function calls are well-formed, in the sense that no function is
+called with arguments of inadequate types.
+
+A function is "well-typed" if its run-time behaviour is clear from its
+type. It is seldom that prominant type-systems tackle the sort of
+side-effects characterised as /unquestionable/ above. (Although this
+is an exciting area of research!) They do however, tend to make a
+solid attempt at taming the /questionable/ side-effects above.
