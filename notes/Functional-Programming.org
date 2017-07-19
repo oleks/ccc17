@@ -20,8 +20,9 @@ from calling the function.
 As a baseline, the type of a function can specify some adequate types
 for its arguments, as well as the type of value that it will produce
 as a result. Having such types, we can ensure that sequences of
-function calls are well-formed, in the sense that no function is
-called with arguments of inadequate types.
+function calls (where the results of function calls are used as
+arguments in subsequent function calls) are well-formed, in the sense
+that no function is called with arguments of inadequate types.
 
 A function is "well-typed" if its run-time behaviour is clear from its
 type. It is seldom that prominant type-systems tackle the sort of
