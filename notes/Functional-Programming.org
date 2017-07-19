@@ -15,7 +15,10 @@ allocating, or freeing memory that is not reclaimed before the
 function returns, performing, or relying on I/O operations, etc.
 
 We compose functions by letting the results of previous function calls
-serve as arguments to subsequent function calls.
+serve as arguments to subsequent function calls. This is called a
+function call sequence. A powerful element of functional programming
+is to allow functions as values. This allows for the actual function
+call sequence to be constructed dynamically, at run-time.
 
 The "type" of a function specifies what sort of outcome we can expect
 from calling the function.
