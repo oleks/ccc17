@@ -14,15 +14,17 @@ for its execution. Calling a function may also have some
 allocating, or freeing memory that is not reclaimed before the
 function returns, performing, or relying on I/O operations, etc.
 
+We compose functions by letting the results of previous function calls
+serve as arguments to subsequent function calls.
+
 The "type" of a function specifies what sort of outcome we can expect
 from calling the function.
 
 As a baseline, the type of a function can specify some adequate types
 for its arguments, as well as the type of value that it will produce
 as a result. Having such types, we can ensure that sequences of
-function calls (where the results of function calls are used as
-arguments in subsequent function calls) are well-formed, in the sense
-that no function is called with arguments of inadequate types.
+function calls are well-formed, in the sense that no function is
+called with arguments of inadequate types.
 
 A function is "well-typed" if its run-time behaviour is clear from its
 type. It is seldom that prominant type-systems tackle the sort of
