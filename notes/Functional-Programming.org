@@ -16,7 +16,7 @@ operations.
 
 Functions are "composed" by letting the results from previous function
 calls, serve as arguments to subsequent function calls. A powerful
-element of functional programming is to allow functions as
+element of functional programming is to allow functions to serve as
 values. This allows for the actual function call sequence to be
 constructed dynamically, at run-time.
 
