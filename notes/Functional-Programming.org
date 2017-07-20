@@ -1,4 +1,4 @@
-#+TITLE: Functional Programming
+dik#+TITLE: Functional Programming
 #+AUTHOR: Oleks Shturmov
 #+EMAIL: oleks@oleks.info
 #+LANGUAGE: en
@@ -7,33 +7,35 @@ Functional Programming is a programming paradigm which strives for
 programming by composing well-typed functions.
 
 A "function" is a computational process, that given some arguments
-produces a value. As an unquestionable side-effect, the function will
-use up some (non-reclaimable) time, and temporarily claim some memory
-for its execution. Calling a function may also have some
-/questionable/ side-effects, such as modifying external variables,
-allocating, or freeing memory that is not reclaimed before the
-function returns, performing, or relying on I/O operations, etc.
+produces a value. As an unquestionable side-effect, function execution
+claims some (precious, non-reclaimable) time, and temporarily claims
+some memory to have some scratchspace for the execution. Calling a
+function may also have some /questionable/ side-effects, such as
+modifying external variables, allocating, or freeing other types of
+memory, performing, or relying on I/O operations, etc.
 
-We compose functions by letting the results of previous function calls
-serve as arguments to subsequent function calls. This is called a
-function call sequence. A powerful element of functional programming
-is to allow functions as values. This allows for the actual function
-call sequence to be constructed dynamically, at run-time.
+Functions are "composed" by letting the results from previous function
+calls, serve as arguments to subsequent function calls. A powerful
+element of functional programming is to allow functions as
+values. This allows for the actual function call sequence to be
+constructed dynamically, at run-time.
 
 The "type" of a function specifies what sort of outcome we can expect
 from calling the function.
 
-As a baseline, the type of a function can specify some types for its
-arguments, as well as the type of value that it will produce as a
-result. Having such types, we can ensure that sequences of function
-calls are well-formed, in the sense that no function is called with
+As a baseline, the type of a function can specify the types of its
+arguments, as well as the type of value it will produce as a
+result. Having such types, we can ensure that function call sequences
+are well-formed, in the sense that no function is called with
 arguments of illegal types.
 
 A function is "well-typed" if its run-time behaviour is clear from its
-type. It is seldom that prominant type-systems tackle the sort of
+type. The extent of such "clarity" varies across programming
+languages: It is seldom that prominant type-systems tackle the sort of
 side-effects characterised as /unquestionable/ above. (Although this
 is an exciting area of research!) Some prominent type-systems do make
 a solid an attempt at taming the /questionable/ side-effects above,
-and we will explore some of those in these lecture notes. Mostly,
-however, functional programming tends to be confined to pure,
-side-effect-free program fragments.
+and we will explore some of those in these lecture notes. Mostly
+however, functional programming tends to be confined to
+side-effect-free program fragments, where all there is to say about a
+function are its argument and output types.
