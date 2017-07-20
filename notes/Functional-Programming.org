@@ -1,4 +1,4 @@
-dik#+TITLE: Functional Programming
+#+TITLE: Functional Programming
 #+AUTHOR: Oleks Shturmov
 #+EMAIL: oleks@oleks.info
 #+LANGUAGE: en
