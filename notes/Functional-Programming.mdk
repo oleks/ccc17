@@ -6,9 +6,9 @@ programming by composing well-typed functions.
 A "function" is a computational process, that given some arguments
 produces a value. As an unquestionable side-effect, function execution
 claims some precious computational time, and temporarily claims some
-memory to have some scratchspace for the execution. Calling a function
+memory to have some scratch-space for the execution. Calling a function
 may also have some /questionable/ side-effects, such as dealing in
-memory outside of the designated scratchspace, or performing I/O
+memory outside of the designated scratch-space, or performing I/O
 operations.
 
 Functions are "composed" by letting the results from previous function
@@ -28,7 +28,7 @@ arguments of illegal types.
 
 A function is "well-typed" if its run-time behaviour is clear from its
 type. The extent of such "clarity" varies across programming
-languages: It is seldom that prominant type-systems tackle the sort of
+languages: It is seldom that prominent type-systems tackle the sort of
 side-effects characterised as /unquestionable/ above. (Although this
 is an exciting area of research!) Some prominent type-systems do make
 a solid an attempt at taming the /questionable/ side-effects above,
