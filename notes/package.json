@@ -1,0 +1,7 @@
+{
+  "name"    : "CCC",
+  "version" : "1.0.0-dev",
+  "scripts" : {
+    "preinstall": "npm install madoko"
+  }
+}

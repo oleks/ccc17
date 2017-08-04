@@ -1,7 +1,4 @@
-#+TITLE: Functional Programming
-#+AUTHOR: Oleks Shturmov
-#+EMAIL: oleks@oleks.info
-#+LANGUAGE: en
+# Functional Programming
 
 Functional Programming is a programming paradigm which strives for
 programming by composing well-typed functions.
