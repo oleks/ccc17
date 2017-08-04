@@ -8,3 +8,7 @@ Toc depth: 2
 [TITLE]
 
 [INCLUDE=Preface.mdk]
+
+[TOC]
+
+[INCLUDE=Functional-Programming.mdk]
